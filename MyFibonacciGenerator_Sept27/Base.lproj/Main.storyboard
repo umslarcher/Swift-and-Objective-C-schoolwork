@@ -1,25 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFibonacciGenerator_Sept27" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fibonacci Series Prints Here" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvF-t1-XeP">
+                                <rect key="frame" x="10" y="77.5" width="300" height="78"/>
+                                <color key="backgroundColor" red="0.79098521310000003" green="1" blue="0.82842673840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Cnf-AM-AhN"/>
+                                    <constraint firstAttribute="height" constant="78" id="bXa-qT-LtU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS2-od-4oa">
+                                <rect key="frame" x="94" y="390" width="133" height="30"/>
+                                <color key="backgroundColor" red="0.82049256869999998" green="1" blue="0.88209249280000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Generate Fibonacci">
+                                    <color key="titleColor" red="0.03009009809" green="0.03930735036" blue="0.043797348479999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GenFibButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2T-ih-6DN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nk8-a4-4qC">
+                                <rect key="frame" x="112" y="276" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.73461635579999995" green="1" blue="0.99839011600000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="B1R-AE-l5g"/>
+                                    <constraint firstAttribute="width" constant="96" id="kGl-SJ-ebW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the number of times you want the  Fibonacci series generator to run here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b1-nW-sNN">
+                                <rect key="frame" x="7.5" y="220" width="306" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Fibonacci Series Generator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBY-As-LkG">
+                                <rect key="frame" x="42.5" y="28" width="235" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Then click the  &quot;Generate Fibonacci&quot; Button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92s-9Y-rxs">
+                                <rect key="frame" x="10" y="314" width="300" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="JqP-5d-0dE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-JX-TZF">
+                                <rect key="frame" x="107.5" y="467" width="105" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.97013763080000004" blue="0.65186558780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset All Fields">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzK-n7-pyR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wvF-t1-XeP" firstAttribute="top" secondItem="fBY-As-LkG" secondAttribute="bottom" constant="29" id="EGc-hH-eTN"/>
+                            <constraint firstItem="Cgy-JX-TZF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HLt-Y3-G8y"/>
+                            <constraint firstItem="JS2-od-4oa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IuY-aw-T1i"/>
+                            <constraint firstItem="wvF-t1-XeP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Li1-wh-xAb"/>
+                            <constraint firstItem="nk8-a4-4qC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sb8-Gv-CV6"/>
+                            <constraint firstItem="JS2-od-4oa" firstAttribute="top" secondItem="92s-9Y-rxs" secondAttribute="bottom" constant="2" id="TYM-ok-1Ca"/>
+                            <constraint firstItem="fBY-As-LkG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="WVD-n4-xmV"/>
+                            <constraint firstItem="Cgy-JX-TZF" firstAttribute="top" secondItem="JS2-od-4oa" secondAttribute="bottom" constant="47" id="ZiV-c2-ccD"/>
+                            <constraint firstItem="92s-9Y-rxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0a-Z9-e0q"/>
+                            <constraint firstItem="92s-9Y-rxs" firstAttribute="top" secondItem="nk8-a4-4qC" secondAttribute="bottom" constant="8" id="brO-Sw-gFJ"/>
+                            <constraint firstItem="nk8-a4-4qC" firstAttribute="top" secondItem="2b1-nW-sNN" secondAttribute="bottom" constant="15" id="f4i-fZ-jXw"/>
+                            <constraint firstAttribute="bottom" secondItem="92s-9Y-rxs" secondAttribute="bottom" constant="180" id="i3d-gw-Pge"/>
+                            <constraint firstItem="92s-9Y-rxs" firstAttribute="leading" secondItem="wvF-t1-XeP" secondAttribute="leading" id="kti-Xl-Kul"/>
+                            <constraint firstItem="fBY-As-LkG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pVP-sb-DyZ"/>
+                            <constraint firstItem="2b1-nW-sNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uXE-Pl-gmh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ResultLabel" destination="wvF-t1-XeP" id="RLU-7E-Wxu"/>
+                        <outlet property="UserInText" destination="nk8-a4-4qC" id="wzN-p7-OJO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="236" y="418"/>
         </scene>
     </scenes>
 </document>
