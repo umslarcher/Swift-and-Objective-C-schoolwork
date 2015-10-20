@@ -1,0 +1,15 @@
+//
+//  Hypno-Prefix.pch
+//  HypnoWithText-Chap7
+//
+//  Created by William Smith on 10/12/15.
+//  Copyright © 2015 William Smith. All rights reserved.
+//
+
+#ifndef Hypno_Prefix_pch
+#define Hypno_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Hypno_Prefix_pch */

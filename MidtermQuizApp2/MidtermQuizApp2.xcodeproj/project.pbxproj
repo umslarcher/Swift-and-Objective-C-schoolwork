@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE50E8F41BD5D49100B851D1 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AE50E8F71BD5DCFB00B851D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		AEACE8781BD4869E003F408F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE8771BD4869E003F408F /* main.m */; };
+		AEACE87B1BD4869E003F408F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE87A1BD4869E003F408F /* AppDelegate.m */; };
+		AEACE87E1BD4869E003F408F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE87D1BD4869E003F408F /* ViewController.m */; };
+		AEACE8811BD4869E003F408F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEACE87F1BD4869E003F408F /* Main.storyboard */; };
+		AEACE8841BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEACE8821BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld */; };
+		AEACE8861BD4869E003F408F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEACE8851BD4869E003F408F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE50E8F11BD5D49100B851D1 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AEACE8731BD4869E003F408F /* MidtermQuizApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidtermQuizApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEACE8771BD4869E003F408F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEACE8791BD4869E003F408F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEACE87A1BD4869E003F408F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEACE87C1BD4869E003F408F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AEACE87D1BD4869E003F408F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AEACE8801BD4869E003F408F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEACE8831BD4869E003F408F /* MidtermQuizApp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MidtermQuizApp2.xcdatamodel; sourceTree = "<group>"; };
+		AEACE8851BD4869E003F408F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEACE88A1BD4869E003F408F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEACE8701BD4869E003F408F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEACE86A1BD4869E003F408F = {
+			isa = PBXGroup;
+			children = (
+				AEACE8751BD4869E003F408F /* MidtermQuizApp2 */,
+				AEACE8741BD4869E003F408F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEACE8741BD4869E003F408F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEACE8731BD4869E003F408F /* MidtermQuizApp2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEACE8751BD4869E003F408F /* MidtermQuizApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */,
+				AEACE8791BD4869E003F408F /* AppDelegate.h */,
+				AEACE87A1BD4869E003F408F /* AppDelegate.m */,
+				AEACE87C1BD4869E003F408F /* ViewController.h */,
+				AEACE87D1BD4869E003F408F /* ViewController.m */,
+				AEACE87F1BD4869E003F408F /* Main.storyboard */,
+				AE50E8F11BD5D49100B851D1 /* ResultsViewController.h */,
+				AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */,
+				AEACE8851BD4869E003F408F /* Assets.xcassets */,
+				AEACE88A1BD4869E003F408F /* Info.plist */,
+				AEACE8821BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld */,
+				AEACE8761BD4869E003F408F /* Supporting Files */,
+			);
+			path = MidtermQuizApp2;
+			sourceTree = "<group>";
+		};
+		AEACE8761BD4869E003F408F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEACE8771BD4869E003F408F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEACE8721BD4869E003F408F /* MidtermQuizApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEACE88D1BD4869E003F408F /* Build configuration list for PBXNativeTarget "MidtermQuizApp2" */;
+			buildPhases = (
+				AEACE86F1BD4869E003F408F /* Sources */,
+				AEACE8701BD4869E003F408F /* Frameworks */,
+				AEACE8711BD4869E003F408F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MidtermQuizApp2;
+			productName = MidtermQuizApp2;
+			productReference = AEACE8731BD4869E003F408F /* MidtermQuizApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEACE86B1BD4869E003F408F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "William Smith";
+				TargetAttributes = {
+					AEACE8721BD4869E003F408F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AEACE86E1BD4869E003F408F /* Build configuration list for PBXProject "MidtermQuizApp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEACE86A1BD4869E003F408F;
+			productRefGroup = AEACE8741BD4869E003F408F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEACE8721BD4869E003F408F /* MidtermQuizApp2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEACE8711BD4869E003F408F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE50E8F71BD5DCFB00B851D1 /* Default-568h@2x.png in Resources */,
+				AEACE8861BD4869E003F408F /* Assets.xcassets in Resources */,
+				AEACE8811BD4869E003F408F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEACE86F1BD4869E003F408F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEACE87E1BD4869E003F408F /* ViewController.m in Sources */,
+				AEACE87B1BD4869E003F408F /* AppDelegate.m in Sources */,
+				AE50E8F41BD5D49100B851D1 /* ResultsViewController.m in Sources */,
+				AEACE8841BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld in Sources */,
+				AEACE8781BD4869E003F408F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AEACE87F1BD4869E003F408F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEACE8801BD4869E003F408F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEACE88B1BD4869E003F408F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AEACE88C1BD4869E003F408F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEACE88E1BD4869E003F408F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MidtermQuizApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.MidtermQuizApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEACE88F1BD4869E003F408F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MidtermQuizApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.MidtermQuizApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEACE86E1BD4869E003F408F /* Build configuration list for PBXProject "MidtermQuizApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEACE88B1BD4869E003F408F /* Debug */,
+				AEACE88C1BD4869E003F408F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEACE88D1BD4869E003F408F /* Build configuration list for PBXNativeTarget "MidtermQuizApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEACE88E1BD4869E003F408F /* Debug */,
+				AEACE88F1BD4869E003F408F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEACE8821BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEACE8831BD4869E003F408F /* MidtermQuizApp2.xcdatamodel */,
+			);
+			currentVersion = AEACE8831BD4869E003F408F /* MidtermQuizApp2.xcdatamodel */;
+			path = MidtermQuizApp2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEACE86B1BD4869E003F408F /* Project object */;
+}

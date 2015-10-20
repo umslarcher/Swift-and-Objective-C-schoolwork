@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KUd-ak-ysI">
+                    <rect key="frame" x="-160" y="-108" width="320" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="Alj-4C-oNh">
+                            <variation key="widthClass=compact" constant="400"/>
+                        </constraint>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="466378653.897039">
+                        <!--2015-10-12 21:37:33 +0000-->
+                    </date>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Alj-4C-oNh"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Alj-4C-oNh"/>
+                        </mask>
+                    </variation>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR2-n8-gi2">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="vq1-h4-Q9v"/>
+                        <constraint firstAttribute="width" constant="145" id="wvO-9c-GGj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Remind Me!">
+                        <color key="titleColor" red="0.89141414139999997" green="0.2302189053" blue="0.2238835196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vq1-h4-Q9v"/>
+                            <exclude reference="wvO-9c-GGj"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="vq1-h4-Q9v"/>
+                            <include reference="wvO-9c-GGj"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eR2-n8-gi2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DRM-1o-hRB"/>
+                <constraint firstItem="KUd-ak-ysI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="RLS-Mg-Dn9"/>
+                <constraint firstItem="KUd-ak-ysI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i8e-92-st1"/>
+                <constraint firstItem="eR2-n8-gi2" firstAttribute="top" secondItem="KUd-ak-ysI" secondAttribute="bottom" constant="61" id="vFk-Ql-yQ8"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="KUd-ak-ysI"/>
+                    <exclude reference="eR2-n8-gi2"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="RLS-Mg-Dn9"/>
+                    <exclude reference="i8e-92-st1"/>
+                    <exclude reference="DRM-1o-hRB"/>
+                    <exclude reference="vFk-Ql-yQ8"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="KUd-ak-ysI"/>
+                    <include reference="eR2-n8-gi2"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="RLS-Mg-Dn9"/>
+                    <include reference="i8e-92-st1"/>
+                    <include reference="DRM-1o-hRB"/>
+                    <include reference="vFk-Ql-yQ8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

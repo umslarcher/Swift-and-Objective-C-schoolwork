@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0FDC241BC34E7100DB46D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FDC231BC34E7100DB46D2 /* main.m */; };
+		AE0FDC2F1BC34E7100DB46D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0FDC2E1BC34E7100DB46D2 /* Assets.xcassets */; };
+		AE0FDC321BC34E7100DB46D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0FDC301BC34E7100DB46D2 /* LaunchScreen.storyboard */; };
+		AE0FDC3B1BC34ED500DB46D2 /* WHSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FDC3A1BC34ED500DB46D2 /* WHSViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AE0FDC3E1BC3554200DB46D2 /* WHSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0FDC3D1BC3554200DB46D2 /* WHSAppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE0FDC1F1BC34E7100DB46D2 /* WHSHypnosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHSHypnosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0FDC231BC34E7100DB46D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE0FDC2E1BC34E7100DB46D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0FDC311BC34E7100DB46D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0FDC331BC34E7100DB46D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0FDC391BC34ED500DB46D2 /* WHSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WHSViewController.h; path = ../WHSViewController.h; sourceTree = "<group>"; };
+		AE0FDC3A1BC34ED500DB46D2 /* WHSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHSViewController.m; path = ../WHSViewController.m; sourceTree = "<group>"; };
+		AE0FDC3C1BC3554200DB46D2 /* WHSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WHSAppDelegate.h; path = ../WHSAppDelegate.h; sourceTree = "<group>"; };
+		AE0FDC3D1BC3554200DB46D2 /* WHSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHSAppDelegate.m; path = ../WHSAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0FDC1C1BC34E7100DB46D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0FDC161BC34E7100DB46D2 = {
+			isa = PBXGroup;
+			children = (
+				AE0FDC211BC34E7100DB46D2 /* WHSHypnosis */,
+				AE0FDC201BC34E7100DB46D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0FDC201BC34E7100DB46D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0FDC1F1BC34E7100DB46D2 /* WHSHypnosis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0FDC211BC34E7100DB46D2 /* WHSHypnosis */ = {
+			isa = PBXGroup;
+			children = (
+				AE0FDC3C1BC3554200DB46D2 /* WHSAppDelegate.h */,
+				AE0FDC3D1BC3554200DB46D2 /* WHSAppDelegate.m */,
+				AE0FDC391BC34ED500DB46D2 /* WHSViewController.h */,
+				AE0FDC3A1BC34ED500DB46D2 /* WHSViewController.m */,
+				AE0FDC2E1BC34E7100DB46D2 /* Assets.xcassets */,
+				AE0FDC301BC34E7100DB46D2 /* LaunchScreen.storyboard */,
+				AE0FDC331BC34E7100DB46D2 /* Info.plist */,
+				AE0FDC221BC34E7100DB46D2 /* Supporting Files */,
+			);
+			path = WHSHypnosis;
+			sourceTree = "<group>";
+		};
+		AE0FDC221BC34E7100DB46D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE0FDC231BC34E7100DB46D2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0FDC1E1BC34E7100DB46D2 /* WHSHypnosis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0FDC361BC34E7100DB46D2 /* Build configuration list for PBXNativeTarget "WHSHypnosis" */;
+			buildPhases = (
+				AE0FDC1B1BC34E7100DB46D2 /* Sources */,
+				AE0FDC1C1BC34E7100DB46D2 /* Frameworks */,
+				AE0FDC1D1BC34E7100DB46D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHSHypnosis;
+			productName = WHSHypnosis;
+			productReference = AE0FDC1F1BC34E7100DB46D2 /* WHSHypnosis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0FDC171BC34E7100DB46D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "William Smith";
+				TargetAttributes = {
+					AE0FDC1E1BC34E7100DB46D2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AE0FDC1A1BC34E7100DB46D2 /* Build configuration list for PBXProject "WHSHypnosis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0FDC161BC34E7100DB46D2;
+			productRefGroup = AE0FDC201BC34E7100DB46D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0FDC1E1BC34E7100DB46D2 /* WHSHypnosis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0FDC1D1BC34E7100DB46D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0FDC321BC34E7100DB46D2 /* LaunchScreen.storyboard in Resources */,
+				AE0FDC2F1BC34E7100DB46D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0FDC1B1BC34E7100DB46D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0FDC241BC34E7100DB46D2 /* main.m in Sources */,
+				AE0FDC3B1BC34ED500DB46D2 /* WHSViewController.m in Sources */,
+				AE0FDC3E1BC3554200DB46D2 /* WHSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE0FDC301BC34E7100DB46D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0FDC311BC34E7100DB46D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0FDC341BC34E7100DB46D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE0FDC351BC34E7100DB46D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0FDC371BC34E7100DB46D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WHSHypnosis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.WHSHypnosis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE0FDC381BC34E7100DB46D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WHSHypnosis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.WHSHypnosis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0FDC1A1BC34E7100DB46D2 /* Build configuration list for PBXProject "WHSHypnosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0FDC341BC34E7100DB46D2 /* Debug */,
+				AE0FDC351BC34E7100DB46D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0FDC361BC34E7100DB46D2 /* Build configuration list for PBXNativeTarget "WHSHypnosis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0FDC371BC34E7100DB46D2 /* Debug */,
+				AE0FDC381BC34E7100DB46D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0FDC171BC34E7100DB46D2 /* Project object */;
+}

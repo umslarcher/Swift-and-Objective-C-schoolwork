@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController">
+            <connections>
+                <outlet property="datePicker" destination="ahp-69-v5K" id="OQ6-dg-HGL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ahp-69-v5K">
+                    <rect key="frame" x="-160" y="-108" width="320" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="QEd-dh-2OO"/>
+                        <constraint firstAttribute="height" constant="216" id="hgx-hF-1R0"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="466381666.29142302">
+                        <!--2015-10-12 22:27:46 +0000-->
+                    </date>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QEd-dh-2OO"/>
+                            <exclude reference="hgx-hF-1R0"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="QEd-dh-2OO"/>
+                            <include reference="hgx-hF-1R0"/>
+                        </mask>
+                    </variation>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKK-SI-3kF">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.93858629660000004" green="1" blue="0.96832688580000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="1Ca-a0-Fyn"/>
+                        <constraint firstAttribute="height" constant="51" id="V5I-Nh-iJH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Remind Me!">
+                        <color key="titleColor" red="0.89141414139999997" green="0.2302189053" blue="0.2238835196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1Ca-a0-Fyn"/>
+                            <exclude reference="V5I-Nh-iJH"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1Ca-a0-Fyn"/>
+                            <include reference="V5I-Nh-iJH"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="addReminder:" destination="-1" eventType="touchUpInside" id="kJ6-gx-OZO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ahp-69-v5K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hks-tO-Rfe"/>
+                <constraint firstItem="gKK-SI-3kF" firstAttribute="top" secondItem="ahp-69-v5K" secondAttribute="bottom" constant="73" id="jLL-4A-dou"/>
+                <constraint firstItem="gKK-SI-3kF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sAY-Nw-KPO"/>
+                <constraint firstItem="ahp-69-v5K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="xlc-Ws-nqA"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="ahp-69-v5K"/>
+                    <exclude reference="gKK-SI-3kF"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="jLL-4A-dou"/>
+                    <exclude reference="sAY-Nw-KPO"/>
+                    <exclude reference="hks-tO-Rfe"/>
+                    <exclude reference="xlc-Ws-nqA"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="ahp-69-v5K"/>
+                    <include reference="gKK-SI-3kF"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="jLL-4A-dou"/>
+                    <include reference="sAY-Nw-KPO"/>
+                    <include reference="hks-tO-Rfe"/>
+                    <include reference="xlc-Ws-nqA"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
