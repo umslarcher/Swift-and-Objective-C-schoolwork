@@ -28,8 +28,8 @@ int usersHighestLevel;
 
     usersHighestLevel = [levelReached intValue];
 
-    noneButton.layer.borderWidth = 1.0f;
-    noneButton.layer.borderColor = [[UIColor whiteColor]CGColor];
+//    noneButton.layer.borderWidth = 1.0f;
+//    noneButton.layer.borderColor = [[UIColor whiteColor]CGColor];
     solveButton.layer.borderWidth = 1.0f;
     solveButton.layer.borderColor = [[UIColor whiteColor]CGColor];
     showQuestionButton.layer.borderWidth = 1.0f;
@@ -51,11 +51,17 @@ int usersHighestLevel;
 }
 
 
+
+
+
+
 - (IBAction)endEditAnswer:(UITextField *)sender forEvent:(UIEvent *)event {
     [answerField resignFirstResponder];
 }
 - (IBAction)answerField:(id)sender {
 }
+
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -70,6 +76,7 @@ int usersHighestLevel;
     //[answerField resignFirstResponder];
 
 }
+
 
 
 -(void)questions{
@@ -129,29 +136,24 @@ int usersHighestLevel;
     [answerField resignFirstResponder];
     
     
+    
     //answers
     if(usersHighestLevel==0 && [answerField.text isEqualToString:@"2"]){
         
         //answer 1
         
-        //NSLog(@"Highest Level before 1 = %i", usersHighestLevel);
+        
         usersHighestLevel = 1;
         
-        //NSLog(@"Highest Level before 1 = %i ", usersHighestLevel);
         NSString *completedlvl = @"1";
         [[NSUserDefaults standardUserDefaults] setObject:completedlvl forKey:@"levelReached"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-        //NSLog(@"In if before viewDidLoad now ");
         
         [self viewDidLoad];
-        //NSLog(@"In if after viewDidLoad now ");
+       
     }
     else if (usersHighestLevel == 0 && ![answerField.text isEqualToString:@"2"]){
-    //else{
-        //NSLog(@"In else now ");
-        //[self wrongAnswer];
-        
-        //question.text = @"Incorrect, Try Again!";
+    
         answerField.text = nil;
         [self viewDidLoad];
     
@@ -348,26 +350,26 @@ int usersHighestLevel;
     
 }
 
--(void)wrongAnswer{
-    
-    NSLog(@"In wrongAnswer now ");
-    
-    question.text = @"Incorrect, Try Again!";
-    answerField.text = nil;
-}
--(void)wrongAnswer2{
-    
-    
-    question.text = @"Current worlds’ top performing superbike maker!";
-    answerField.text = nil;
-}
-
--(void)winner{
-    
-    question.text = @"Congratulations! You answered all 10 questions correctly.!";
-    
-    answerField.text = @"Click ‘Quit’ to see your score and reset the quiz.";
-}
+//-(void)wrongAnswer{
+//    
+//    NSLog(@"In wrongAnswer now ");
+//    
+//    question.text = @"Incorrect, Try Again!";
+//    answerField.text = nil;
+//}
+//-(void)wrongAnswer2{
+//    
+//    
+//    question.text = @"Current worlds’ top performing superbike maker!";
+//    answerField.text = nil;
+//}
+//
+//-(void)winner{
+//    
+//    question.text = @"Congratulations! You answered all 10 questions correctly.!";
+//    
+//    answerField.text = @"Click ‘Quit’ to see your score and reset the quiz.";
+//}
 
 
 - (void)didReceiveMemoryWarning {

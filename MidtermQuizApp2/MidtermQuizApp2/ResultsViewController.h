@@ -13,17 +13,20 @@
     
     IBOutlet UILabel *highestLevelReached;
     
-    IBOutlet UILabel *resultsField;
     
-    IBOutlet UIButton *returnBut;
+    
+    IBOutlet UILabel *resultsField;
+    IBOutlet UILabel *resultLab;
+    
     
     IBOutlet UIButton *resetScoreBut;
     
     
+    IBOutlet UIButton *resetButton;
 }
 
 
--(IBAction)exit:(id)sender;
+
 
 -(IBAction)resetScore:(id)sender;
 

@@ -18,15 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //UIView *superview = self.class;
+    
     // Do any additional setup after loading the view from its nib.
 
 
-
-    
     resetScoreBut.layer.borderWidth = 1.0f;
     resetScoreBut.layer.borderColor = [[UIColor whiteColor]CGColor];
-    returnBut.layer.borderWidth = 1.0f;
-    returnBut.layer.borderColor = [[UIColor whiteColor]CGColor];
+    //returnBut.layer.borderWidth = 1.0f;
+    //returnBut.layer.borderColor = [[UIColor whiteColor]CGColor];
     resultsField.layer.borderWidth = 1.0f;
     resultsField.layer.borderColor = [[UIColor whiteColor]CGColor];
     
@@ -46,14 +47,13 @@
 }
 
 
--(IBAction)exit:(id)sender;{
-    
-}
+
 
 -(IBAction)resetScore:(id)sender;{
     
     [self dismissViewControllerAnimated:YES completion:nil];
     [self resetStandardUserDefaults];
+    //[self viewDidLoad];
     
 }
 
@@ -67,12 +67,16 @@
     [[NSUserDefaults standardUserDefaults] setObject:levelReached forKey:@"levelReached"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+
     
-    NSString *stringForLabel = [NSString stringWithFormat:@"YOUR SCORE BEEN RESET TO:  %i ", intForString];
+    NSString *stringForLabel = [NSString stringWithFormat:@"YOUR SCORE HAS BEEN RESET TO:  %i ", intForString];
     
-    highestLevelReached.text = stringForLabel;
-    
+    resultLab.text = stringForLabel;
+
+   
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

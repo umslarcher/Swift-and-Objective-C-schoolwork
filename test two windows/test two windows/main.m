@@ -1,15 +1,13 @@
 //
 //  main.m
-//  MidtermQuizApp2
+//  test two windows
 //
-//  Created by William Smith on 10/18/15.
+//  Created by William Smith on 10/20/15.
 //  Copyright © 2015 William Smith. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
-
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {

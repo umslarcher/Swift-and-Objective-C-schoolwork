@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE50E8F41BD5D49100B851D1 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		AE50E8F71BD5DCFB00B851D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		AE50E8F41BD5D49100B851D1 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */; };
 		AEACE8781BD4869E003F408F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE8771BD4869E003F408F /* main.m */; };
 		AEACE87B1BD4869E003F408F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE87A1BD4869E003F408F /* AppDelegate.m */; };
 		AEACE87E1BD4869E003F408F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEACE87D1BD4869E003F408F /* ViewController.m */; };
 		AEACE8811BD4869E003F408F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEACE87F1BD4869E003F408F /* Main.storyboard */; };
 		AEACE8841BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEACE8821BD4869E003F408F /* MidtermQuizApp2.xcdatamodeld */; };
 		AEACE8861BD4869E003F408F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEACE8851BD4869E003F408F /* Assets.xcassets */; };
+		AECC9F6D1BD62AFB00AEC1F2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECC9F6C1BD62AFB00AEC1F2 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE50E8F11BD5D49100B851D1 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		AE50E8F21BD5D49100B851D1 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
-		AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AEACE8731BD4869E003F408F /* MidtermQuizApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidtermQuizApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEACE8771BD4869E003F408F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEACE8791BD4869E003F408F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		AEACE8831BD4869E003F408F /* MidtermQuizApp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MidtermQuizApp2.xcdatamodel; sourceTree = "<group>"; };
 		AEACE8851BD4869E003F408F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEACE88A1BD4869E003F408F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECC9F6C1BD62AFB00AEC1F2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		AEACE8751BD4869E003F408F /* MidtermQuizApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				AE50E8F61BD5DCFA00B851D1 /* Default-568h@2x.png */,
+				AECC9F6C1BD62AFB00AEC1F2 /* Default-568h@2x.png */,
 				AEACE8791BD4869E003F408F /* AppDelegate.h */,
 				AEACE87A1BD4869E003F408F /* AppDelegate.m */,
 				AEACE87C1BD4869E003F408F /* ViewController.h */,
@@ -144,9 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE50E8F71BD5DCFB00B851D1 /* Default-568h@2x.png in Resources */,
 				AEACE8861BD4869E003F408F /* Assets.xcassets in Resources */,
 				AEACE8811BD4869E003F408F /* Main.storyboard in Resources */,
+				AECC9F6D1BD62AFB00AEC1F2 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.MidtermQuizApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -279,7 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umsl.MidtermQuizApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

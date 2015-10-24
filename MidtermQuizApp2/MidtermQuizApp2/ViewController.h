@@ -11,21 +11,19 @@
 @interface ViewController : UIViewController <UITextFieldDelegate> {
     
     
-    IBOutlet UILabel *question;
-    IBOutlet UIButton *noneButton;
-    IBOutlet UIButton *solveButton;
+    __weak IBOutlet UILabel *question;
+    __weak IBOutlet UIButton *solveButton;
+    __weak IBOutlet UIButton *showQuestionButton;
+    __weak IBOutlet UITextField *answerField;
 
-    IBOutlet UIButton *showQuestionButton;
-    
-    IBOutlet UITextField *answerField;
-    
     
 }
-
 
 -(IBAction)solveAction:(id)sender;
 
 -(IBAction)showQuestion:(id)sender;
+
+
 
 
 

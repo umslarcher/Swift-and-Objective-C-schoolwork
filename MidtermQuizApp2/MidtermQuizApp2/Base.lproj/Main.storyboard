@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -52,21 +52,7 @@
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="JMG-yb-aI2" kind="modal" id="FW9-35-wli"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oI-G4-rhv">
-                                        <rect key="frame" x="174" y="245" width="130" height="30"/>
-                                        <color key="backgroundColor" red="0.82049256869999998" green="1" blue="0.88209249280000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ZP8-NV-woI"/>
-                                            <constraint firstAttribute="width" constant="130" id="b7b-6h-ut1"/>
-                                        </constraints>
-                                        <state key="normal" title="SOLVE">
-                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="solveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxI-kl-IhK"/>
+                                            <segue destination="JMG-yb-aI2" kind="modal" id="rT9-cL-mBf"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your answer here" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-zk-N5Q">
@@ -96,6 +82,20 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oI-G4-rhv">
+                                        <rect key="frame" x="174" y="245" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.82049256869999998" green="1" blue="0.88209249280000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ZP8-NV-woI"/>
+                                            <constraint firstAttribute="width" constant="130" id="b7b-6h-ut1"/>
+                                        </constraints>
+                                        <state key="normal" title="SOLVE">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="solveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxI-kl-IhK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-685" y="-114"/>
+            <point key="canvasLocation" x="-922" y="-188"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="osS-rC-5bF">
@@ -177,7 +177,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="7G9-Bj-0kK"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="I52-LO-syl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi4-4S-oYz">
@@ -227,15 +227,13 @@
                     </view>
                     <connections>
                         <outlet property="highestLevelReached" destination="EaO-sd-Vvk" id="OUQ-q7-3rs"/>
-                        <outlet property="resetButton" destination="Vi4-4S-oYz" id="Wfi-js-Wgc"/>
                         <outlet property="resetScoreBut" destination="Vi4-4S-oYz" id="1bb-Eh-ubo"/>
-                        <outlet property="resultLab" destination="EaO-sd-Vvk" id="VPv-zB-3ul"/>
-                        <outlet property="results" destination="EaO-sd-Vvk" id="cE7-A2-762"/>
+                        <outlet property="resultLab" destination="EaO-sd-Vvk" id="vOB-Rb-e3T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYM-1M-S3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-283" y="-119"/>
+            <point key="canvasLocation" x="-528" y="-188"/>
         </scene>
     </scenes>
 </document>
