@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MidtermQuiz4
+//  ScrollViewTutorial
 //
-//  Created by William Smith on 10/20/15.
+//  Created by William Smith on 10/23/15.
 //  Copyright © 2015 William Smith. All rights reserved.
 //
 
@@ -16,22 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
-}
-- (IBAction)showQBut:(id)sender {
-    
-    
+    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)solveBut:(id)sender {
-    
-    
-    
-}
 @end

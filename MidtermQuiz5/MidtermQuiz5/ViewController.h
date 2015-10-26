@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController  <UITextFieldDelegate>{
 
 
+
+    __weak IBOutlet UIScrollView *scrollView;
     // TextFields, Labels, and views
     __weak IBOutlet UITextField *scoreTextF;
     __weak IBOutlet UITextView *answerTextF;

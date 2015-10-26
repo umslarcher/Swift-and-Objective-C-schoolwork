@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MidtermQuiz4
+//  quizWithArray
 //
-//  Created by William Smith on 10/20/15.
+//  Created by William Smith on 10/24/15.
 //  Copyright © 2015 William Smith. All rights reserved.
 //
 
@@ -17,21 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
-}
-- (IBAction)showQBut:(id)sender {
-    
-    
+    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)solveBut:(id)sender {
-    
-    
-    
-}
 @end

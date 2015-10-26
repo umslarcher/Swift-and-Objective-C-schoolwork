@@ -39,7 +39,7 @@ int usersHighestLevel;
     question.layer.borderWidth = 1.0f;
     question.layer.borderColor = [[UIColor whiteColor]CGColor];
 
-    
+    [self showScore];
     question.text = @"Are You Ready???";
     //answerField.text = nil;
 
@@ -51,10 +51,6 @@ int usersHighestLevel;
 }
 
 
-
-
-
-
 - (IBAction)endEditAnswer:(UITextField *)sender forEvent:(UIEvent *)event {
     [answerField resignFirstResponder];
 }
@@ -63,20 +59,39 @@ int usersHighestLevel;
 
 
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    [answerField becomeFirstResponder]; //if desired
+    
+    return YES;
+    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
     [answerField resignFirstResponder];
     
-    return NO;
-}
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    NSLog(@"touchesBegn:withEvent");
-    [self.view endEditing:YES];
-    [super touchesBegan:touches withEvent:event];
-    //[answerField resignFirstResponder];
-
+    
 }
 
+//Show score
+- (void)showScore{
+    
+    NSString *levelReached = [[NSUserDefaults standardUserDefaults] stringForKey:@"levelReached"];
+    int intForString = [levelReached intValue];
+    intForString = intForString;
+    NSString *stringForLabel = [NSString stringWithFormat:@"SCORE: %i of 10", intForString];
+    
+    showField.text = stringForLabel;
+    
+}
+//-(BOOL)UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resignOnTap:)]{
+//[singleTap setNumberOfTapsRequired:1];
+//[singleTap setNumberOfTouchesRequired:1];
+//[self.view addGestureRecognizer:singleTap];
+//[singleTap release];
+//}
 
 
 -(void)questions{

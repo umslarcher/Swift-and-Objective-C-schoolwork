@@ -13,7 +13,8 @@
 		AE12B3A81BDAD6000051FACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE12B3A61BDAD6000051FACA /* Main.storyboard */; };
 		AE12B3AB1BDAD6000051FACA /* MidtermQuiz5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE12B3A91BDAD6000051FACA /* MidtermQuiz5.xcdatamodeld */; };
 		AE12B3AD1BDAD6000051FACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE12B3AC1BDAD6000051FACA /* Assets.xcassets */; };
-		AE12B3B01BDAD6000051FACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE12B3AE1BDAD6000051FACA /* LaunchScreen.storyboard */; };
+		AE12B3B91BDB08C90051FACA /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE12B3B71BDB08C90051FACA /* Main2.storyboard */; };
+		AE2A79121BDCCAE10075C120 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2A79111BDCCAE10075C120 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		AE12B3A71BDAD6000051FACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE12B3AA1BDAD6000051FACA /* MidtermQuiz5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MidtermQuiz5.xcdatamodel; sourceTree = "<group>"; };
 		AE12B3AC1BDAD6000051FACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE12B3AF1BDAD6000051FACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE12B3B11BDAD6000051FACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE12B3B81BDB08C90051FACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
+		AE2A79111BDCCAE10075C120 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		AE12B3911BDAD6000051FACA = {
 			isa = PBXGroup;
 			children = (
+				AE2A79111BDCCAE10075C120 /* Default-568h@2x.png */,
 				AE12B39C1BDAD6000051FACA /* MidtermQuiz5 */,
 				AE12B39B1BDAD6000051FACA /* Products */,
 			);
@@ -65,8 +68,8 @@
 				AE12B3A31BDAD6000051FACA /* ViewController.h */,
 				AE12B3A41BDAD6000051FACA /* ViewController.m */,
 				AE12B3A61BDAD6000051FACA /* Main.storyboard */,
+				AE12B3B71BDB08C90051FACA /* Main2.storyboard */,
 				AE12B3AC1BDAD6000051FACA /* Assets.xcassets */,
-				AE12B3AE1BDAD6000051FACA /* LaunchScreen.storyboard */,
 				AE12B3B11BDAD6000051FACA /* Info.plist */,
 				AE12B3A91BDAD6000051FACA /* MidtermQuiz5.xcdatamodeld */,
 				AE12B39D1BDAD6000051FACA /* Supporting Files */,
@@ -139,8 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE12B3B01BDAD6000051FACA /* LaunchScreen.storyboard in Resources */,
 				AE12B3AD1BDAD6000051FACA /* Assets.xcassets in Resources */,
+				AE2A79121BDCCAE10075C120 /* Default-568h@2x.png in Resources */,
+				AE12B3B91BDB08C90051FACA /* Main2.storyboard in Resources */,
 				AE12B3A81BDAD6000051FACA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,12 +174,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AE12B3AE1BDAD6000051FACA /* LaunchScreen.storyboard */ = {
+		AE12B3B71BDB08C90051FACA /* Main2.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AE12B3AF1BDAD6000051FACA /* Base */,
+				AE12B3B81BDB08C90051FACA /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main2.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +308,7 @@
 				AE12B3B61BDAD6000051FACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

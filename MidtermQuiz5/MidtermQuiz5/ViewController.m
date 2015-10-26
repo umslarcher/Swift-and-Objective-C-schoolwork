@@ -18,8 +18,13 @@ int userScore;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [answerTextF resignFirstResponder];
+    
+    
+    //self.scrollView.contentSize = CGSizeMake(320, 1500);
+    
+    
+    
+    //[answerTextF resignFirstResponder];
     NSString *levelReached = [[NSUserDefaults standardUserDefaults] stringForKey:@"levelReached"];
     
     userScore = [levelReached intValue];
@@ -39,33 +44,31 @@ int userScore;
     
     questionLabPrompt.text = @"**Click Show Question When You Are Ready! **";
 }
+
+
+
+- (IBAction)answerField:(id)sender {
+
+   // [answerTextF becomeFirstResponder];
+   // answerTextF.text = nil;
+
+}
+
 - (IBAction)endEditAnswer:(UITextField *)sender forEvent:(UIEvent *)event {
     
     [answerTextF resignFirstResponder];
     
 }
-- (IBAction)answerField:(id)sender {
-    
-    [answerTextF becomeFirstResponder];
-}
 
-
-
-    //Update score
+    //Show score
 - (void)showScore{
-    
     
     NSString *levelReached = [[NSUserDefaults standardUserDefaults] stringForKey:@"levelReached"];
     int intForString = [levelReached intValue];
-    
-   
-    
     intForString = intForString;
-   
-    
     NSString *stringForLabel = [NSString stringWithFormat:@"SCORE: %i of 10", intForString];
     
-        scoreTextF.text = stringForLabel;
+    scoreTextF.text = stringForLabel;
     
 }
 
@@ -74,35 +77,42 @@ int userScore;
 {
     [answerTextF resignFirstResponder];
     
-    return NO;
+    return YES;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesBegn:withEvent");
     [self.view endEditing:YES];
     [super touchesBegan:touches withEvent:event];
-    //[answerField resignFirstResponder];
-    
-}
-
-    //Show Question Button
-- (IBAction)showQBut:(UIButton *)sender {
     [answerTextF resignFirstResponder];
-    questionLabPrompt.text = nil;
-     [self questions];
     
 }
 
 
+
+- (IBAction)showQBut:(UIButton *)sender {
+    
+    [answerTextF resignFirstResponder];
+    questionLabPrompt.text = @"Enter answer in the GREEN field";
+    [self questions];
+    
+}
+
+// Solve question answer button
+- (IBAction)solveBut:(UIButton *)sender {
+    
+    //[answerTextF resignFirstResponder];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self solve];
+    
+}
     //Reset button
 - (IBAction)resetBut:(UIButton *)sender {
     [answerTextF resignFirstResponder];
-    
+    questionLabel.text = @"Score has been reset.";
     [self dismissViewControllerAnimated:YES completion:nil];
     [self resetScore];
 }
-
-
 
 
 
@@ -157,12 +167,12 @@ int userScore;
     }
 }
 
-// Solve question answer button
-- (IBAction)solveBut:(UIButton *)sender {
 
+
+// solve function
+-(void)solve{
     
 
-    
     [answerTextF resignFirstResponder];
     
     questionLabel.text = @"??????";
@@ -372,11 +382,14 @@ int userScore;
         
         answerTextF.text = nil;
     }
+
     
 }
 
     
 -(void)resetScore {
+    
+    questionLabel.text = @"Score has been reset.";
     
     [answerTextF resignFirstResponder];
     NSString *levelReached = [[NSUserDefaults standardUserDefaults] stringForKey:@"levelReached"];
@@ -386,22 +399,11 @@ int userScore;
     [[NSUserDefaults standardUserDefaults] setObject:levelReached forKey:@"levelReached"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    
-    //NSString *stringForLabel = [NSString stringWithFormat:@"YOUR SCORE HAS BEEN RESET TO:  %i ", intForString];
-    //highestLevelReached = @"YOUR SCORE HAS BEEN RESET TO:  %i ", intForString;
-    
-    
-    
-    //NSString *stringForLabel = [NSString stringWithFormat:@"SCORE WAS RESET TO:  %i ", intForString];
-    
-    //scoreTextF.text = stringForLabel;
-    
+
     [self viewDidLoad];
     
     
 }
-    
-
 
 
 - (void)didReceiveMemoryWarning {

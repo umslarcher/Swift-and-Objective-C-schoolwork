@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UITextFieldDelegate> {
     
     
+    __weak IBOutlet UILabel *showField;
     __weak IBOutlet UILabel *question;
     __weak IBOutlet UIButton *solveButton;
     __weak IBOutlet UIButton *showQuestionButton;

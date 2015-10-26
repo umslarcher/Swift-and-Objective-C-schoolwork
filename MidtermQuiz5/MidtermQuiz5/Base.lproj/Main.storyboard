@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
@@ -10,291 +9,102 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="TQz-HK-Mt0"/>
+                        <viewControllerLayoutGuide type="bottom" id="66B-I6-geX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midterm Quiz by Will Smith" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4U-Uj-08l">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="efe-i7-GG1"/>
-                                    <constraint firstAttribute="width" constant="150" id="rUo-eQ-ayi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="efe-i7-GG1"/>
-                                        <exclude reference="rUo-eQ-ayi"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="efe-i7-GG1"/>
-                                        <include reference="rUo-eQ-ayi"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-rc-tdC">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.98874263569999998" blue="0.55590901410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1QV-uk-1QB"/>
-                                    <constraint firstAttribute="width" constant="130" id="T5b-lG-bEx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Show Question">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1QV-uk-1QB"/>
-                                        <exclude reference="T5b-lG-bEx"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="1QV-uk-1QB"/>
-                                        <include reference="T5b-lG-bEx"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="showQBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nV-Ko-Hhc"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Y7-gZ-FuM">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NmT-03-Ryr"/>
-                                    <constraint firstAttribute="width" constant="350" id="PGw-Zn-cdx">
-                                        <variation key="widthClass=compact" constant="300"/>
-                                    </constraint>
-                                </constraints>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="NmT-03-Ryr"/>
-                                        <exclude reference="PGw-Zn-cdx"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="NmT-03-Ryr"/>
-                                        <include reference="PGw-Zn-cdx"/>
-                                    </mask>
-                                </variation>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-tc-2Aj">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="OIL-Xk-6bc"/>
-                                    <constraint firstAttribute="height" constant="50" id="jpI-Rp-A8M"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="OIL-Xk-6bc"/>
-                                        <exclude reference="jpI-Rp-A8M"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="OIL-Xk-6bc"/>
-                                        <include reference="jpI-Rp-A8M"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-pL-i85">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="MHg-ls-LTc"/>
-                                    <constraint firstAttribute="width" constant="300" id="m83-tI-UoB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MHg-ls-LTc"/>
-                                        <exclude reference="m83-tI-UoB"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="MHg-ls-LTc"/>
-                                        <include reference="m83-tI-UoB"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-11-CrT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.82049256869999998" green="1" blue="0.88209249280000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="H7d-Gv-Fb6"/>
-                                    <constraint firstAttribute="width" constant="240" id="OKX-B9-g16"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="H7d-Gv-Fb6"/>
-                                        <exclude reference="OKX-B9-g16"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="H7d-Gv-Fb6"/>
-                                        <include reference="OKX-B9-g16"/>
-                                    </mask>
-                                </variation>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n26-sx-CgJ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Jq1-pu-sLz"/>
-                                    <constraint firstAttribute="width" constant="110" id="map-5x-jrT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Reset Score">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Jq1-pu-sLz"/>
-                                        <exclude reference="map-5x-jrT"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Jq1-pu-sLz"/>
-                                        <include reference="map-5x-jrT"/>
-                                    </mask>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHt-jS-qoD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-11-CrT">
+                                        <rect key="frame" x="42" y="287" width="240" height="50"/>
+                                        <color key="backgroundColor" red="0.82049256869999998" green="1" blue="0.88209249280000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Midterm Quiz by Will Smith" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4U-Uj-08l">
+                                        <rect key="frame" x="26" y="13" width="150" height="80"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Y7-gZ-FuM">
+                                        <rect key="frame" x="172" y="47" width="120" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.8547857874" blue="0.85507551140000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-tc-2Aj">
+                                        <rect key="frame" x="9" y="101" width="300" height="51"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-rc-tdC">
+                                        <rect key="frame" x="94" y="228" width="130" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.98874263569999998" blue="0.55590901410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Show Question">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showQBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nV-Ko-Hhc"/>
+                                            <action selector="showQBut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="jPd-qg-fKv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuN-D5-VCF">
+                                        <rect key="frame" x="94" y="345" width="130" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.98874263569999998" blue="0.55590901410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Solve Question">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="solveBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12Z-eR-Uaf"/>
+                                            <action selector="solveBut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="svF-n4-sWd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n26-sx-CgJ">
+                                        <rect key="frame" x="104" y="399" width="110" height="35"/>
+                                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="19"/>
+                                        <state key="normal" title="Reset Score">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetBut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="leK-LX-cvM"/>
+                                            <action selector="resetBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHs-6s-nAk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-pL-i85">
+                                        <rect key="frame" x="8" y="160" width="300" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                                 <connections>
-                                    <action selector="resetBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xHs-6s-nAk"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="4uu-9b-oTY"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuN-D5-VCF">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.98874263569999998" blue="0.55590901410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="2x7-kO-nIA"/>
-                                    <constraint firstAttribute="height" constant="30" id="smv-H3-bk6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Solve Question">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2x7-kO-nIA"/>
-                                        <exclude reference="smv-H3-bk6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="2x7-kO-nIA"/>
-                                        <include reference="smv-H3-bk6"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="solveBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12Z-eR-Uaf"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="m4U-Uj-08l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="F1s-Wq-d8E"/>
-                            <constraint firstItem="NuN-D5-VCF" firstAttribute="top" secondItem="Q51-11-CrT" secondAttribute="bottom" constant="20" id="ICu-Ne-Ao1"/>
-                            <constraint firstItem="NuN-D5-VCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OH7-cY-qb9"/>
-                            <constraint firstItem="1Y7-gZ-FuM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QD3-FI-E4B">
-                                <variation key="widthClass=compact" constant="5"/>
-                            </constraint>
-                            <constraint firstItem="Rr2-tc-2Aj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vpt-0O-5lL"/>
-                            <constraint firstItem="Q51-11-CrT" firstAttribute="top" secondItem="AZx-pL-i85" secondAttribute="bottom" constant="20" id="Xu7-db-y2c"/>
-                            <constraint firstItem="Rr2-tc-2Aj" firstAttribute="top" secondItem="pvm-rc-tdC" secondAttribute="bottom" constant="10" id="egP-qG-BXE"/>
-                            <constraint firstItem="m4U-Uj-08l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eog-Q1-rag"/>
-                            <constraint firstItem="pvm-rc-tdC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9f-JA-2Nr"/>
-                            <constraint firstItem="pvm-rc-tdC" firstAttribute="top" secondItem="m4U-Uj-08l" secondAttribute="bottom" constant="15" id="hmZ-6g-jVE"/>
-                            <constraint firstItem="AZx-pL-i85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnE-Z4-pof"/>
-                            <constraint firstItem="n26-sx-CgJ" firstAttribute="top" secondItem="NuN-D5-VCF" secondAttribute="bottom" constant="20" id="oD2-fh-Vh5"/>
-                            <constraint firstItem="Q51-11-CrT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qPx-Kc-IXG"/>
-                            <constraint firstItem="AZx-pL-i85" firstAttribute="top" secondItem="Rr2-tc-2Aj" secondAttribute="bottom" constant="15" id="s2C-zm-bTC"/>
-                            <constraint firstItem="1Y7-gZ-FuM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xsN-QE-6dg">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="n26-sx-CgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yEK-Mb-HjT"/>
+                            <constraint firstAttribute="trailing" secondItem="RHt-jS-qoD" secondAttribute="trailing" id="4z3-gz-HR1"/>
+                            <constraint firstItem="RHt-jS-qoD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C7a-dC-djN"/>
+                            <constraint firstItem="66B-I6-geX" firstAttribute="top" secondItem="RHt-jS-qoD" secondAttribute="bottom" id="FGV-3l-eca"/>
+                            <constraint firstItem="RHt-jS-qoD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oQp-7F-vxJ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="m4U-Uj-08l"/>
-                                <exclude reference="pvm-rc-tdC"/>
-                                <exclude reference="1Y7-gZ-FuM"/>
-                                <exclude reference="Rr2-tc-2Aj"/>
-                                <exclude reference="AZx-pL-i85"/>
-                                <exclude reference="Q51-11-CrT"/>
-                                <exclude reference="n26-sx-CgJ"/>
-                                <exclude reference="NuN-D5-VCF"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="QD3-FI-E4B"/>
-                                <exclude reference="xsN-QE-6dg"/>
-                                <exclude reference="F1s-Wq-d8E"/>
-                                <exclude reference="eog-Q1-rag"/>
-                                <exclude reference="Vpt-0O-5lL"/>
-                                <exclude reference="egP-qG-BXE"/>
-                                <exclude reference="f9f-JA-2Nr"/>
-                                <exclude reference="hmZ-6g-jVE"/>
-                                <exclude reference="lnE-Z4-pof"/>
-                                <exclude reference="s2C-zm-bTC"/>
-                                <exclude reference="Xu7-db-y2c"/>
-                                <exclude reference="qPx-Kc-IXG"/>
-                                <exclude reference="ICu-Ne-Ao1"/>
-                                <exclude reference="OH7-cY-qb9"/>
-                                <exclude reference="oD2-fh-Vh5"/>
-                                <exclude reference="yEK-Mb-HjT"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="m4U-Uj-08l"/>
-                                <include reference="pvm-rc-tdC"/>
-                                <include reference="1Y7-gZ-FuM"/>
-                                <include reference="Rr2-tc-2Aj"/>
-                                <include reference="AZx-pL-i85"/>
-                                <include reference="Q51-11-CrT"/>
-                                <include reference="n26-sx-CgJ"/>
-                                <include reference="NuN-D5-VCF"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="QD3-FI-E4B"/>
-                                <include reference="xsN-QE-6dg"/>
-                                <include reference="F1s-Wq-d8E"/>
-                                <include reference="eog-Q1-rag"/>
-                                <include reference="Vpt-0O-5lL"/>
-                                <include reference="egP-qG-BXE"/>
-                                <include reference="f9f-JA-2Nr"/>
-                                <include reference="hmZ-6g-jVE"/>
-                                <include reference="lnE-Z4-pof"/>
-                                <include reference="s2C-zm-bTC"/>
-                                <include reference="Xu7-db-y2c"/>
-                                <include reference="qPx-Kc-IXG"/>
-                                <include reference="ICu-Ne-Ao1"/>
-                                <include reference="OH7-cY-qb9"/>
-                                <include reference="oD2-fh-Vh5"/>
-                                <include reference="yEK-Mb-HjT"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="answerTextF" destination="Q51-11-CrT" id="cGy-bg-EYz"/>
@@ -302,13 +112,14 @@
                         <outlet property="questionLabel" destination="AZx-pL-i85" id="F2b-xj-vTO"/>
                         <outlet property="resetBut" destination="n26-sx-CgJ" id="QAt-Qr-1xk"/>
                         <outlet property="scoreTextF" destination="1Y7-gZ-FuM" id="ACW-HQ-HhM"/>
+                        <outlet property="scrollView" destination="RHt-jS-qoD" id="YWG-ON-evP"/>
                         <outlet property="showQBut" destination="pvm-rc-tdC" id="60S-PH-vnA"/>
                         <outlet property="solveBut" destination="NuN-D5-VCF" id="E4w-eG-BCn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.5" y="387"/>
+            <point key="canvasLocation" x="-328.5" y="-173"/>
         </scene>
     </scenes>
 </document>
